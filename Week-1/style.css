@@ -9,7 +9,7 @@
 /* body reset */
 body {
     min-height: 100vh;
-    width:fit-content;
+    width:100%;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 #navbar ul li {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-left: 8px;
     cursor: pointer;
     border-radius: 5px;
@@ -141,19 +141,19 @@ table.even tr:nth-child(2n) {
 footer div {
     display: flex;
 }
-#box1{
-    margin-left:200px; 
-    margin-right: 200px;
+ #box1{
+    margin-left:500px; 
+    margin-right: 100px;
 }
 #box2{
-    margin-right: 200px
+    margin-right: 100px
 }
 #box3{
-    margin-right: 200px
+    margin-right: 100px
 }
 #box4{
-    margin-right: 200px
+    margin-right: 100px
 }
 #box5{
-    margin-right: 200px
+    margin-right: 100px
 }
