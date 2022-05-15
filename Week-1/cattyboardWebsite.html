@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
- 
+
 <body>
+
     <nav id="navbar">
-        <ul class="navbar-nav">
+        <ul class="sidebar">
             <li class="la la-bars"><a href="#"></a></li>
             <li class="la la-home"><a href="#"></a></li>
             <li class="la la-search"><a href="#"></a></li>
@@ -24,22 +25,24 @@
             <li class="la la-soundcloud"><a href="#"></a></li>
         </ul>
     </nav>
-    <div class="main-content">
-        <div class="main">
-            <img class="img" src="cattyboard.jpg" width="200">
-            <div id="section-chart" >
+
+    <div class="main">
+        <div class="main__content">
+            <img class="main__content__logo" src="cattyboard.jpg" width="200">
+            <div id="main__content__head">
                 <h2>CattyBoard Top 100 Single Charts (11.06.36)</h2>
                 <h3>Unknown Artist</h3>
                 <h3>2016. Charts. 100 Songs</h3>
-                <div id="section-chart2">
-                    <span class="la la-play"><a class="white"href="#">Play All</a></span>
-                    <span class="la la-plus"><a class="white"href="#">Add on</a></span>
+                <div id="main__content__bottom">
+                    <span class="la la-play"><a class="white" href="#">Play All</a></span>
+                    <span class="la la-plus"><a class="white" href="#">Add on</a></span>
                     <span class="la la-ellipsis-h"><a class="white" href="#">More</a></span>
                 </div>
             </div>
         </div>
+
         <div>
-            <table class="even">
+            <table class="chartlist">
                 <tr>
                     <td>1. One dance</td>
                     <td>Crake feat Catkid & Cyla</td>
@@ -66,25 +69,24 @@
                 </tr>
             </table>
         </div>
-       
     </div>
+
     <footer id="footer">
-        <img  class="img2" src="cattyboard.jpg" width="100">
+        <img class="footer__logo" src="cattyboard.jpg" width="100">
         <div>
             <ul>
-                <li class="song">If it Ain't Love</li>
-                <li class="artist">Catson Derulo</li>
+                <li class="footer__songname">If it Ain't Love</li>
+                <li class="footer__artistname">Catson Derulo</li>
             </ul>
-            <div class="play">
-                <span class="la la-step-backward" id="box1"></span>
-                <span class="la la-pause" id="box2"></span>
-                <span class="la la-step-forward"  id="box2"></span>
-                <span class="la la-undo-alt" id="box2"></span>
-                <span class="la la-random" id="box2"></span>
-            </div>
         </div>
+        <div class="footer__controls">
+            <span class="la la-step-backward control-l"></span>
+            <span class="la la-pause control-l"></span>
+            <span class="la la-step-forward control-c"></span>
+            <span class="la la-undo-alt control-r"></span>
+            <span class="la la-random contro-r"></span>
+        </div>         
     </footer>
-</body>
- 
-</html>
 
+</body>
+</html>
