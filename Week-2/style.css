@@ -14,7 +14,7 @@ body{
     width:3rem;
     text-align: center;
 }
-.sidebar_head{
+.sidebar__head{
     position:fixed;
 }
 .but{
