@@ -1,17 +1,25 @@
 body{
     padding:0px;
     margin:0px;
+    font-family: 'Koulen', cursive;;
+    color: aliceblue;
+}
+a{
+    color:aliceblue;
+}
+a:hover{
+    color:#a90000;
+    cursor: pointer;
 }
 .container{
     width:100%;
-    background-color: red;
     display:flex;
     height:100%;
 }
 .sidebar{
-    background-color:grey;
+    background-color:#0549a5;
     padding:10px;
-    width:3rem;
+    width:4rem;
     text-align: center;
 }
 .sidebar__head{
@@ -20,21 +28,38 @@ body{
 .but{
     border:1px black;
     border-radius: 10px;
-    background-color: azure;
     width:5rem;
     height: 1.5rem;
     text-align: center;
 }
+.main{
+    text-align: center;
+
+}
 .but:hover{
-    background-color: aqua;
+    background-color:#00b9ff;
+    cursor: pointer;
 }
 .content{
     display:flex;
     width:100%;
-    background-color: bisque;
+    background-color: #ffb300;
     flex-direction: column;
     vertical-align: middle;
-
+}
+.cont1, .cont2{
+    text-align:center;
+}
+.cont1{
+    background-image: url(luffy.webp);
+    background-position: center;
+}
+.cont2{
+    background-image: url(zoro.webp);
+}
+.logo{
+    display: flex;
+    align-items: flex-end;
 }
 .navbar{
     display:flex;
@@ -42,8 +67,8 @@ body{
     align-items: center;
     width:100%;
     position:fixed;
-    background-color: yellow;
-    height:2rem;
+    background-color: #a90000;
+    height:4rem;
 }
 .block{
     padding:50px;
@@ -56,7 +81,7 @@ form{
    width:100%
 }
 footer{
-    background-color: aqua;
+    background-color: #00b9ff;
     
 }
 footer h2,p{
