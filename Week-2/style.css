@@ -2,7 +2,7 @@ body{
     padding:0px;
     margin:0px;
     font-family: 'Koulen', cursive;;
-    color: aliceblue;
+    color: #333333;
 }
 a{
     color:aliceblue;
@@ -19,7 +19,7 @@ a:hover{
 .sidebar{
     background-color:#0549a5;
     padding:10px;
-    width:4rem;
+    width:50px;
     text-align: center;
 }
 .sidebar__head{
@@ -28,12 +28,13 @@ a:hover{
 .but{
     border:1px black;
     border-radius: 10px;
-    width:5rem;
+    width:4rem;
     height: 1.5rem;
     text-align: center;
 }
 .main{
     text-align: center;
+    background-image: url(orange.webp);
 
 }
 .but:hover{
@@ -49,21 +50,27 @@ a:hover{
 }
 .cont1, .cont2{
     text-align:center;
+    color:white;
 }
 .cont1{
     background-image: url(luffy.webp);
     background-position: center;
 }
 .cont2{
-    background-image: url(zoro.webp);
+    background-image: url(zoro.jpg);
+    background-position: center;
 }
-.logo{
+.navbar__logo{
     display: flex;
-    align-items: flex-end;
+    align-self: flex-start;
+}
+
+.navbar__head{
+    display:flex;
+    justify-content: space-between;
 }
 .navbar{
     display:flex;
-    justify-content: space-around;
     align-items: center;
     width:100%;
     position:fixed;
@@ -78,20 +85,71 @@ a:hover{
 }
 form{
    text-align: center;
-   width:100%
+   width:100%;
+   padding-top:50px;
+}
+form h2{
+    color:white;
+    background-image: url(map.jpg);
+}
+.form_space{
+    display: flex;
+    border:solid black;
+    border-radius: 10px;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit{
+    background-color: #0549a5;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.form__space__l, .form__space__r{
+    padding:10px;
+}
+
+.submit:hover{
+    background-color:#a90000;
 }
 footer{
     background-color: #00b9ff;
+    color:white;
     
 }
 footer h2,p{
     margin-left: 20px;
     margin-right: 20px;
 }
-@media (max-width: 450px){
+@media (max-width: 550px){
     .cont{
         display:flex;
         flex-direction:column;
+    }
+    .navbar{
+        height: 2rem;
+    }
+    .navbar__logo{
+        width:100px;
+    }
+    .navbar__logo img{
+        width:100px;
+    }
+    .navbar_head{
+        position:relative;
+    }
+    .navbar,.sidebar{
+        font-size: 0.7rem;
+    }
+    .block{
+        padding-top: 60px;
+    }
+    .sidebar__head{
+        justify-content: flex-start;
+    }
+    .form__space__l, .form__space__r{
+        padding:0px;
     }
 }
 

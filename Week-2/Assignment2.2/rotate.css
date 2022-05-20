@@ -1,0 +1,74 @@
+body{
+box-sizing: border-box;
+}
+.red{
+    width:100px;
+    height:100px;
+    background-color: red;
+    position: absolute;
+
+}
+/* .red:hover {
+    animation: movered 2s;
+} */
+h1{
+    position:absolute;
+    text-align: center;
+    width:200px;
+    top:50%;
+}
+.yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 100px;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+    top: 100px;
+}
+
+.green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+section{
+    position:relative;
+    width:200px;
+    height: 200px;
+    margin:auto;
+    
+}
+
+ section:hover .red {
+    transform: rotate(90deg);
+    transition-duration: 3s;
+    transform-origin: top left;
+} 
+section:hover .yellow {
+    transform: rotate(90deg);
+    transition-duration: 3s;
+    transform-origin: top right;
+} 
+section:hover .blue {
+    transform: rotate(90deg);
+    transition-duration: 3s;
+    transform-origin: bottom left;
+} 
+section:hover .green {
+    transform: rotate(90deg);
+    transition-duration: 3s;
+    transform-origin: bottom right;
+} 
+
+
