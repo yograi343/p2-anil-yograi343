@@ -82,7 +82,6 @@ a:hover {
 .block__main {
     text-align: center;
     background-image: url(images/orange.webp);
-
 }
 
 .block__cont {
@@ -155,7 +154,10 @@ p {
 }
 
 @media (max-width: 550px) {
-    .cont {
+    body{
+        font-size: 10px;
+    }
+    .block__cont {
         display: flex;
         flex-direction: column;
     }
@@ -176,15 +178,17 @@ p {
         position: relative;
     }
 
-    .navbar,
-    .sidebar {
+    .navbar, .sidebar {
         font-size: 0.7rem;
+        padding:0px;
     }
 
     .block {
         padding-top: 60px;
     }
-
+    .sidebar{
+        width:2rem;
+    }
     .sidebar__head {
         justify-content: flex-start;
     }
@@ -192,4 +196,5 @@ p {
     .form_space {
         font-size: 0.4rem;
     }
+    
 }
