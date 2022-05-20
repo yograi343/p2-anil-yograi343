@@ -1,21 +1,29 @@
+/* body reset */
 body{
 box-sizing: border-box;
 }
+/* Creating big box containing all the other boxes and text */
+.container{
+    position:relative;
+    width:200px;
+    height: 200px;
+    margin:auto; 
+}
+/* Text hi */
+.hi{
+    position:absolute;
+    text-align: center;
+    width:200px;
+    top:50%;
+}
+/* Individual boxes dimension */
 .red{
     width:100px;
     height:100px;
     background-color: red;
     position: absolute;
-
-}
-/* .red:hover {
-    animation: movered 2s;
-} */
-h1{
-    position:absolute;
-    text-align: center;
-    width:200px;
-    top:50%;
+    transform: rotate(0);
+    transition-duration: 2s;
 }
 .yellow {
     width: 100px;
@@ -23,16 +31,18 @@ h1{
     background-color: yellow;
     position: absolute;
     left: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
 }
-
 .blue {
     width: 100px;
     height: 100px;
     position: absolute;
     background-color: blue;
     top: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
 }
-
 .green {
     width: 100px;
     height: 100px;
@@ -40,35 +50,33 @@ h1{
     position: absolute;
     left: 100px;
     top: 100px;
+    transform: rotate(0);
+    transition-duration: 2s;
 }
-
-section{
-    position:relative;
-    width:200px;
-    height: 200px;
-    margin:auto;
-    
-}
-
- section:hover .red {
+/* Hover effect animation */
+.container:hover .red {
     transform: rotate(90deg);
-    transition-duration: 3s;
+    transition-duration: 2s;
     transform-origin: top left;
+    transition:transform 2s linear;
 } 
-section:hover .yellow {
+.container:hover .yellow {
     transform: rotate(-90deg);
-    transition-duration: 3s;
+    transition-duration: 2s;
     transform-origin: top right;
+    transition:transform 2s linear;
 } 
-section:hover .blue {
+.container:hover .blue {
     transform: rotate(-90deg);
-    transition-duration: 3s;
+    transition-duration: 2s;
     transform-origin: bottom left;
+    transition:transform 2s linear;
 } 
-section:hover .green {
+.container:hover .green {
     transform: rotate(90deg);
-    transition-duration: 3s;
+    transition-duration: 2s;
     transform-origin: bottom right;
+    transition:transform 2s linear;
 } 
 
 
