@@ -34,7 +34,7 @@ a:hover{
 }
 .main{
     text-align: center;
-    background-image: url(orange.webp);
+    background-image: url(images/orange.webp);
 
 }
 .but:hover{
@@ -53,11 +53,11 @@ a:hover{
     color:white;
 }
 .cont1{
-    background-image: url(luffy.webp);
+    background-image: url(images/luffy.webp);
     background-position: center;
 }
 .cont2{
-    background-image: url(zoro.jpg);
+    background-image: url(images/zoro.jpg);
     background-position: center;
 }
 .navbar__logo{
@@ -90,24 +90,25 @@ form{
 }
 form h2{
     color:white;
-    background-image: url(map.jpg);
+    background-image: url(images/map.jpg);
 }
 .form_space{
-    display: flex;
     border:solid black;
     border-radius: 10px;
     width:fit-content;
     margin-left: auto;
     margin-right: auto;
 }
+.form_space div{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
 .submit{
     background-color: #0549a5;
     color:white;
     font-weight: bold;
     border-radius: 10px;
-}
-.form__space__l, .form__space__r{
-    padding:10px;
 }
 
 .submit:hover{
@@ -116,7 +117,6 @@ form h2{
 footer{
     background-color: #00b9ff;
     color:white;
-    
 }
 footer h2,p{
     margin-left: 20px;
@@ -148,8 +148,8 @@ footer h2,p{
     .sidebar__head{
         justify-content: flex-start;
     }
-    .form__space__l, .form__space__r{
-        padding:0px;
+    .form_space{
+        font-size: 0.4rem;
     }
 }
 

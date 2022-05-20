@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece Wiki</title>
-    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
         <div class="content">
             <nav class="navbar">
                 <div class="navbar__logo">
-                    <img src="Site-logo.webp">
+                    <img src="images/Site-logo.webp">
                 </div>
                 <div class="navbar__head">
                     <a class="but" href="#">Home</a>
@@ -104,32 +104,37 @@
                     <h2>Join the Community</h2>
                     <div class="form">
                         <div class="form_space">
-                            <div class="form__space__l">
-                                <label for="title">Title:</label><br>
-                                <label for="fname">First name:</label><br>
-                                <label for="lname">Last name:</label><br>
-                                <label for="phnumber">Ph Number:</label><br>
-                                <label for="mailid">Email:</label><br>
-                                <label for="password">Password:</label><br>
-                                <label for="cnfpassword">Confirm Password:</label><br>
+                            <div id="title fill">
+                                <label>Title:</label>
+                                <input type="radio" name="title">Mr.
+                                <input type="radio" name="title">Miss
+                                <input type="radio" name="title">Mrs.
                             </div>
-
-                            <div class="form__space__r">
-                                <div>
-                                    <input type="radio" name="title">Mr.
-                                    <input type="radio" name="title">Miss
-                                    <input type="radio" name="title">Mrs.
-                                </div>
-                                <input type="text" name="fname" size="10"><br>
-                                <input type="text" name="lname" size="10"><br>
-                                <input type="phone" name="phnumber" size="10"><br>
-                                <input type="email" name="mailid" size="10"><br>
-                                <input type="password" name="password" size="10"><br>
-                                <input type="password" name="cnfpassword" size="10"><br>
+                            <div class="fname fill">
+                                <label>First Name:</label>
+                                <input type="text" name="fname">
+                            </div>
+                            <div id="lname fill">
+                                <label>Last Name:</label>
+                                <input type="text" name="lname">
+                            </div>
+                            <div id="pnumber fill">
+                                <label>Phone Number:</label>
+                                <input type="phone" name="pnum">
+                            </div>
+                            <div id="email fill">
+                                <label>Email:</label>
+                                <input type="phone" name="mail">
+                            </div>
+                            <div id="password fill">
+                                <label>Password:</label>
+                                <input type="password" name="password">
+                            </div>
+                            <div id="cpassword fill">
+                                <label>Confirm Password:</label>
+                                <input type="password" name="password">
                             </div>
                         </div>
-
-
                         <input type="submit" class="submit">
                 </form>
             </section>

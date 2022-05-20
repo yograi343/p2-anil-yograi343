@@ -56,12 +56,12 @@ section{
     transform-origin: top left;
 } 
 section:hover .yellow {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transition-duration: 3s;
     transform-origin: top right;
 } 
 section:hover .blue {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transition-duration: 3s;
     transform-origin: bottom left;
 } 
