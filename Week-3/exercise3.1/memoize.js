@@ -1,20 +1,25 @@
-function add(a = 0, b = 0) {
-    return a + b;
+const add=(...args)=> {
+    let sum=0;
+    for (let i of args){
+        sum=sum+i;
+    }
+    return sum;
 }
 
 
 const memoize = (fn) => {
-    const cache = {};
-    return function (a, b) {
-        if (((a + '+' + b) in cache)) {
-            return (cache[a + '+' + b] + ' - no computation');
+    let cache = new Map();
+    return function (...args) {
+        let key=args.toString();
+        if (cache.has(key)) {
+            console.log('Without Computing:');
+            console.log(cache);
+            return cache.get(key);
         }
-        else {
-            let result = fn(a, b);
-            cache[a + '+' + b] = result;
-            cache[b + '+' + a] = result;
-            return result;
-        }
+        cache.set(key,fn(...args));
+        console.log('Adding to cache:');
+        console.log(cache);
+        return cache.get(key);
     }
 }
 
