@@ -40,3 +40,4 @@ const stocks=[3,1,4,8,7,2,5];
 console.log("Max profit using 1st approach: "+buySell(stocks));
 console.log("Max profit using 2nd approach: "+optimizedBuySell(stocks));
 
+
