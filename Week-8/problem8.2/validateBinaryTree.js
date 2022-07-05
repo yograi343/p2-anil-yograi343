@@ -1,57 +1,39 @@
-//implementation search tree and validate if given tree is binary search tree
-class Node{
-    constructor(data){
-        this.data=data;
-        this.left=null;
-        this.right=null;
-    }
-}
-class BST{
-    constructor(){
-        this.root=null;
-    }
-    insert(value){
-        let newNode = new Node(value);
-        if(this.root===null){
-            this.root=newNode;
-            return this;
-        }
-        let current=this.root;
-        while(current){
-            if(value===current.value) return undefined;
-            if(value<current.value){
-                if(current.left===null){
-                    current.left=newNode;
-                    return this;
-                }
-                current=current.left;
-            }else {
-                if(current.right === null){
-                    current.right = newNode;
-                    return this;
-                } 
-                current = current.right;
-            }
-        }
-    } 
-    inorder(value){
-        if(value===null){
-            return;
-        }
-        this.inorder(value.left);
-        console.log(value.data+" ");
-        this.inorder(value.right);
-    }  
+class Node
+{
+  constructor(item)
+  {
+    this.data=item;
+    this.left=this.right=null;
+  }
 }
 
-const preorder=[1,2,4,7,5,3];
+  let root;
+  
+  let isBST=()=>
+  {
+    return isBSTUtil(root, Number.MIN_VALUE,
+              Number.MAX_VALUE);
+  }
+  
+  let isBSTUtil=(node,min,max)=>
+  {
+    if (node == null)
+      return true;
 
-const tree= new BST();
+    if (node.data < min || node.data > max)
+      return false;
 
-for(let i=0; i<preorder.length; i++){
-    tree.insert(preorder[i]);
-}
+    return (isBSTUtil(node.left, min, node.data-1) &&
+        isBSTUtil(node.right, node.data+1, max));
+  }
+  
+    root = new Node(4);
+    root.left = new Node(2);
+    root.right = new Node(5);
+    root.left.left = new Node(1);
+    root.left.right = new Node(3);
 
-tree.inorder(tree);
-
-
+    if (isBST())
+    console.log("IS BST");
+    else
+      console.log("Not a BST");
